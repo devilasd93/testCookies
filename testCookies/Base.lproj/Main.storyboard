@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="od7-Ly-YyI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.30980392159999998" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Evi-me-u0w">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="od7-Ly-YyI" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="1FO-GE-W2t"/>
+                            <constraint firstItem="Evi-me-u0w" firstAttribute="top" secondItem="od7-Ly-YyI" secondAttribute="bottom" id="C4W-mv-rrq"/>
+                            <constraint firstItem="Evi-me-u0w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IJB-fw-Ojo"/>
+                            <constraint firstItem="od7-Ly-YyI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KHX-Yt-soH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Evi-me-u0w" secondAttribute="bottom" id="WMW-E3-AGA"/>
+                            <constraint firstAttribute="trailing" secondItem="Evi-me-u0w" secondAttribute="trailing" id="XfG-wI-GkL"/>
+                            <constraint firstItem="od7-Ly-YyI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nQP-81-zhS"/>
+                            <constraint firstItem="Evi-me-u0w" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="op1-rl-U3t"/>
+                            <constraint firstItem="Evi-me-u0w" firstAttribute="top" secondItem="od7-Ly-YyI" secondAttribute="bottom" id="vOt-EW-w5f"/>
+                            <constraint firstAttribute="trailing" secondItem="od7-Ly-YyI" secondAttribute="trailing" id="wQx-TH-iz6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tvTest" destination="Evi-me-u0w" id="s0S-DT-gsZ"/>
+                        <outlet property="wvTest" destination="od7-Ly-YyI" id="fbZ-6D-88s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
